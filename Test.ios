@@ -1,0 +1,145 @@
+no access-list 109
+!
+access-list 109 remark VTY PE Access
+access-list 109 permit tcp host 166.49.168.198 any eq telnet
+access-list 109 permit tcp host 166.49.168.198 any eq 22
+access-list 109 permit tcp host 166.49.168.196 any eq telnet
+access-list 109 permit tcp host 166.49.168.196 any eq 22
+access-list 109 remark VTY CE Access
+access-list 109 permit tcp 10.2.57.0 0.0.0.255 any eq 22
+access-list 109 permit tcp 10.2.57.0 0.0.0.255 any eq telnet
+access-list 109 permit tcp host 10.2.63.65 any eq 22
+access-list 109 permit tcp host 10.2.63.65 any eq telnet
+access-list 109 permit tcp host 10.2.63.66 any eq 22
+access-list 109 permit tcp host 10.2.63.66 any eq telnet
+access-list 109 permit tcp host 10.2.60.225 any eq 22
+access-list 109 permit tcp host 10.2.60.225 any eq telnet
+access-list 109 permit tcp host 10.2.60.226 any eq 22
+access-list 109 permit tcp host 10.2.60.226 any eq telnet
+!
+access-list 109 remark VTY IVSERVE Access
+access-list 109 permit tcp 62.6.69.96 0.0.0.7 any eq telnet
+access-list 109 permit tcp 62.6.69.128 0.0.0.15 any eq telnet
+access-list 109 permit tcp 62.6.69.96 0.0.0.7 any eq 22
+access-list 109 permit tcp 62.6.69.128 0.0.0.15 any eq 22
+access-list 109 remark VTY Access BT management LAN EMSE
+access-list 109 permit tcp 194.102.6.0 0.0.0.255 any eq telnet
+access-list 109 permit tcp 194.102.8.0 0.0.1.255 any eq telnet
+access-list 109 permit tcp 62.239.34.0 0.0.0.255 any eq telnet
+access-list 109 permit tcp 194.102.6.0 0.0.0.255 any eq 22
+access-list 109 permit tcp 194.102.8.0 0.0.1.255 any eq 22
+access-list 109 permit tcp 62.239.34.0 0.0.0.255 any eq 22
+access-list 109 remark VTY Access BT management LAN VDC
+access-list 109 permit tcp 193.113.254.128 0.0.0.127 any eq telnet
+access-list 109 permit tcp 193.113.244.128 0.0.0.127 any eq telnet
+access-list 109 permit tcp 193.113.254.128 0.0.0.127 any eq 22
+access-list 109 permit tcp 193.113.244.128 0.0.0.127 any eq 22
+access-list 109 remark VTY Access BT management LAN Belgium
+access-list 109 permit tcp 195.171.36.64 0.0.0.31 any eq telnet
+access-list 109 permit tcp 195.171.36.64 0.0.0.31 any eq 22
+access-list 109 remark VTY Access BT management LAN Germany
+access-list 109 permit tcp 195.182.110.224 0.0.0.15 any eq telnet
+access-list 109 permit tcp 195.182.112.192 0.0.0.63 any eq telnet
+access-list 109 permit tcp 195.182.114.192 0.0.0.31 any eq telnet
+access-list 109 permit tcp 195.182.110.224 0.0.0.15 any eq 22
+access-list 109 permit tcp 195.182.112.192 0.0.0.63 any eq 22
+access-list 109 permit tcp 195.182.114.192 0.0.0.31 any eq 22
+access-list 109 remark VTY Access BT management LAN Nordics
+access-list 109 permit tcp 195.100.115.0 0.0.0.15 any eq telnet
+access-list 109 permit tcp 195.100.115.0 0.0.0.15 any eq 22
+access-list 109 remark VTY Access BT management LAN France
+access-list 109 permit tcp 147.151.39.224 0.0.0.31 any eq telnet
+access-list 109 permit tcp 147.151.39.224 0.0.0.31 any eq 22
+access-list 109 remark VTY Internet Access BT management LAN France
+access-list 109 permit tcp 213.236.81.96 0.0.0.15 any eq 22
+access-list 109 remark VTY Access BT management LAN USA Voyence
+access-list 109 permit tcp 62.239.44.240 0.0.0.15 any eq telnet
+access-list 109 permit tcp 62.239.44.240 0.0.0.15 any eq 22
+access-list 109 permit tcp 168.125.7.192 0.0.0.63 any eq telnet
+access-list 109 permit tcp 168.125.7.192 0.0.0.63 any eq 22
+access-list 109 remark VTY Access BT management LAN Netherlands
+access-list 109 permit tcp 147.151.77.0 0.0.0.255 any eq telnet
+access-list 109 permit tcp 147.151.77.0 0.0.0.255 any eq 22
+access-list 109 remark VTY Internet Access BT management LAN Netherlands
+access-list 109 permit tcp 213.236.80.240 0.0.0.7 any eq 22
+access-list 109 remark VTY Access BT management LAN Spain
+access-list 109 permit tcp 212.163.62.0 0.0.0.63 any eq telnet
+access-list 109 permit tcp 212.163.62.0 0.0.0.63 any eq 22
+access-list 109 remark VTY Internet Access BT management LAN Spain
+access-list 109 permit tcp host 212.80.166.2 any eq 22
+access-list 109 remark VTY Access BT management LAN USA
+access-list 109 permit tcp 147.151.225.192 0.0.0.63 any eq telnet
+access-list 109 permit tcp 147.151.225.192 0.0.0.63 any eq 22
+access-list 109 remark VTY Access BT management LAN APAC
+access-list 109 permit tcp 147.151.61.0 0.0.0.127 any eq telnet
+access-list 109 permit tcp 147.151.61.0 0.0.0.127 any eq 22
+access-list 109 remark VTY Internet Access BT management LAN APAC
+access-list 109 permit tcp 61.29.48.128 0.0.0.15 any eq 22
+access-list 109 remark VTY Access BT management LAN Pune
+access-list 109 permit tcp 147.151.185.160 0.0.0.31 any eq telnet
+access-list 109 permit tcp 147.151.185.160 0.0.0.31 any eq 22
+access-list 109 remark VTY Access BT management LAN Budapest
+access-list 109 permit tcp 62.80.66.128 0.0.0.15 any eq telnet
+access-list 109 permit tcp 62.80.66.128 0.0.0.15 any eq 22
+access-list 109 remark VTY BT Management Rainbow Network Range
+access-list 109 permit tcp 147.152.109.0 0.0.0.255 any eq 22
+access-list 109 permit tcp 147.152.109.0 0.0.0.255 any eq telnet
+access-list 109 permit tcp 147.152.111.0 0.0.0.255 any eq 22
+access-list 109 permit tcp 147.152.111.0 0.0.0.255 any eq telnet
+!
+access-list 109 remark VTY Outgoing SCP BT management LAN EMSE
+access-list 109 permit tcp any 194.102.6.0 0.0.0.255 eq 22
+access-list 109 permit tcp any 194.102.8.0 0.0.1.255 eq 22
+access-list 109 permit tcp any 62.239.34.0 0.0.0.255 eq 22
+access-list 109 remark VTY Outgoing SCP BT management LAN VDC
+access-list 109 permit tcp any 193.113.254.128 0.0.0.127 eq 22
+access-list 109 permit tcp any 193.113.244.128 0.0.0.127 eq 22
+access-list 109 remark VTY Outgoing SCP BT management LAN Belgium
+access-list 109 permit tcp any 195.171.36.64 0.0.0.31 eq 22
+access-list 109 remark VTY Outgoing SCP BT management LAN Germany
+access-list 109 permit tcp any 195.182.110.224 0.0.0.15 eq 22
+access-list 109 permit tcp any 195.182.112.192 0.0.0.63 eq 22
+access-list 109 permit tcp any 195.182.114.192 0.0.0.31 eq 22
+access-list 109 remark VTY Outgoing SCP BT management LAN Nordics
+access-list 109 permit tcp any 195.100.115.0 0.0.0.15 eq 22
+access-list 109 remark VTY Outgoing SCP BT management LAN France
+access-list 109 permit tcp any 147.151.39.224 0.0.0.31 eq 22
+access-list 109 remark VTY Internet Outgoing SCP BT management LAN France
+access-list 109 permit tcp any 213.236.81.96 0.0.0.15 eq 22
+access-list 109 remark VTY Outgoing SCP BT management LAN USA Voyence
+access-list 109 permit tcp any 62.239.44.240 0.0.0.15 eq 22
+access-list 109 permit tcp any 168.125.7.192 0.0.0.63 eq 22
+access-list 109 remark VTY Outgoing SCP BT management LAN Netherlands
+access-list 109 permit tcp any 147.151.77.0 0.0.0.255 eq 22
+access-list 109 remark VTY Internet Outgoing SCP BT management LAN Netherlands
+access-list 109 permit tcp any 213.236.80.240 0.0.0.7 eq 22
+access-list 109 remark VTY Outgoing SCP BT management LAN Spain
+access-list 109 permit tcp any 212.163.62.0 0.0.0.63 eq 22
+access-list 109 remark VTY Internet Outgoing SCP BT management LAN Spain
+access-list 109 permit tcp any host 212.80.166.2 eq 22
+access-list 109 remark VTY Outgoing SCP BT management LAN USA
+access-list 109 permit tcp any 147.151.225.192 0.0.0.63 eq 22
+access-list 109 remark VTY Outgoing SCP BT management LAN APAC
+access-list 109 permit tcp any 147.151.61.0 0.0.0.127 eq 22
+access-list 109 remark VTY Internet Outgoing SCP BT management LAN APAC
+access-list 109 permit tcp any 61.29.48.128 0.0.0.15 eq 22
+access-list 109 remark VTY Outgoing SCP BT management LAN Pune
+access-list 109 permit tcp any 147.151.185.160 0.0.0.31 eq 22
+access-list 109 remark VTY Outgoing SCP BT management LAN Budapest
+access-list 109 permit tcp any 62.80.66.128 0.0.0.15 eq 22
+access-list 109 remark VTY Outgoing SCP BT Management Rainbow Network Range
+access-list 109 permit tcp any 147.152.109.0 0.0.0.255 eq 22
+access-list 109 permit tcp any 147.152.111.0 0.0.0.255 eq 22
+access-list 109 remark VTY Outgoing SCP IVSERVE Management
+access-list 109 permit tcp any 62.6.69.96 0.0.0.7 eq 22
+access-list 109 permit tcp any 62.6.69.128 0.0.0.15 eq 22
+access-list 109 remark VTY Outgoing SCP management LAN VDC SMARTS SOLUTIONS
+access-list 109 permit tcp any 195.218.41.0 0.0.0.255 eq 22
+access-list 109 permit tcp any 195.218.44.0 0.0.0.255 eq 22
+access-list 109 permit tcp host 194.74.80.19 any eq telnet
+access-list 109 deny ip any any log
+!
+line vty 0 4
+ access-class 109 in vrf-also
+ exec-timeout 30 0
+!
